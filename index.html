@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SG | Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar">
+                <div class="navbar-container container">
+                    <input type="checkbox" name="" id="">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="menu-items">
+                        <li><a href="#home">Anasayfa</a></li>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#food">İşler</a></li>
+                        <li><a href="#food-menu">Hizmetler</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                    <h1 class="logo">...</h1>
+                </div>
+            </nav>
+
+        </div>
+        <div class="container">
+            <div class="row slider">
+                <div class="col-sm-7">
+                    <div class="d-flex flex-column">
+                        <div class="p-2">
+                            <p class="h1">SG Studio</p>
+                        </div>
+                        <div class="p-2">
+                            <p class="h6">Dijital Tasarım Ajansı</p>
+                        </div>
+                        <div class="p-2">
+                            <div class="arrow-container">
+                               <img src="https://static.tildacdn.com/tild3233-3763-4437-a136-336234333063/Group_246.svg"></div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="d-flex flex-column">
+                        <div class="p-2"> <a href=""><p>info@selamiguler.com</p> </a></div>
+                        <div class="p-2"> <a href=""><p>Instagram</p> </a></div>
+                        <div class="p-2"> <a href=""><p>Github</p> </a></div>
+
+                      </div>                     
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $("html, body").animate(
+                    {
+                        scrollTop: $(hash).offset().top,
+                    },
+                    800,
+                    function () {
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    }
+                );
+            } // End if
+        });
+    });
+</script>
+
+</html>
