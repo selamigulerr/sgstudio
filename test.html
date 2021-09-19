@@ -1,0 +1,24 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+ <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+
+
+<body>
+<!--Div where the WhatsApp will be rendered-->
+  <div id="WAButton"></div>
+  <script>
+
+$(function() {
+  $('#WAButton').floatingWhatsApp({
+    phone: '+905342334051',  
+     headerTitle: 'WhatsApp!',  
+    popupMessage: 'Merhaba, size nasıl yardımcı olabilirim?',  
+    showPopup: true,  
+    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+     position: "right"    
+  });
+});
+
+  </script>
+</body>

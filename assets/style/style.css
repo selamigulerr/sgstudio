@@ -27,10 +27,7 @@ a{
   text-decoration: none;
   color:#fff;
 }
-a:hover{
-  color:#fff;
- font-size: 1.3rem; 
-}
+
 .design{
   margin:8% 0 8% 0;
 }
@@ -256,7 +253,7 @@ img.dot-image {
 }
 .portfolio-url{
   color:#fff;
-    font-size: 48px;
+    font-size: 35px;
     font-family: 'Manrope',Arial,sans-serif;
     line-height: 1.10;
     font-weight: 400;
